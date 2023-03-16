@@ -10,15 +10,15 @@ window.addEventListener("scroll", scrollHeader);
 /* Swiper Popular */
 var swiperPopular = new Swiper(".popular__container", {
   spaceBetween: 32,
-  grabCursor: true,
   centeredSlides: true,
   slidesPerview: "auto",
-  loop: true,
+  rewind: true,
 
   navgation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  keyboard: true,
 });
 
 /* Accordion Value */
@@ -84,7 +84,7 @@ window.addEventListener("scroll", scrollUp);
 /* Dark Theme toggle */
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
-const iconTheme = "bx-sun";
+const iconTheme = "bxs-sun";
 
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
